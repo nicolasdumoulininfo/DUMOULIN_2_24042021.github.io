@@ -47,6 +47,14 @@ p{
 
 head {position: relative;}
 
+#borduresup{
+	position: absolute;
+	top:10px;
+	right:315px;
+	border-top:solid 2px #0065fc;
+	width:10em;
+}
+
 .logo{
 	height:40px;
 	width: auto;
@@ -74,13 +82,25 @@ head {position: relative;}
 
 .sousMenu {
 	display:flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: space-between;
+	
+}
+		.motmenu{
+			padding-left:60px;
+			
+		}
+
+.colorblack{
+	color:black;
 }
 
+a {
+	color:#0065fc;
+}
 
-.motmenu{
-	padding-left:60px;
+.gras{
+	font-weight: bold;
 }
 
 a:hover{
@@ -93,21 +113,13 @@ a:hover{
 	color:#0065fc;
 }
 
-a:visited{
-	color:#0065fc;
-	text-decoration: none;
-	font-weight: bold;
-	
-}
-
 a:active{
-	color:black;
+
 	text-decoration: none;
 	
 }
 
 a:focus{
-	color:black;
 	text-decoration: none;
 
 }
@@ -208,16 +220,16 @@ span .cerclebleu{
 	font-family: ralewayregular;
 	font-size: 1.2em;
 	padding-right: 20px;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .filtres{
 	display: flex;
 	border: 2px solid #f2f2f2;
 	border-radius: 27px;
-	padding-right: 20px;
+	padding-right: 30px;
 	font-size: 1.2em;
-	margin-left:20px;
+	margin-left:30px;
 	font-family: ralewayregular;
 	font-weight: bold;
 }
@@ -227,7 +239,6 @@ span .cerclebleu{
 	display: flex;
 	top:90px;
 	left:0px;
-		
 
 }
 
@@ -254,9 +265,12 @@ span .cercleinfo{
 
 
 article{
-	background-color: #f2f2f2;
-	border-radius: 15px;
-	margin-right:18px;
+background-color: #f2f2f2;
+border-radius: 15px;
+margin-right: 18px;
+justify-content: space-around;
+display: flex;
+flex-direction: column;
 }
 
 
@@ -275,20 +289,20 @@ article{
 		flex-wrap:wrap;
 		background-color: #f2f2f2;
 		padding:10px;
-	
-		
+		justify-content: space-evenly;
+		width: auto;
 		}
 
 			.blocphototohebergement{
 			background-color: white;
 			border: white solid 2px;
 			box-shadow: 3px 3px 3px #b6b5b5;
-			border-radius:10px;
+			border-radius: 10px;
 			height: 225px;
-			width: 280px;
-			margin:5px 6px 20px 20px;
-			
+			width: 290px;
+			margin-bottom: 25px;
 			}
+
 			.desctexte{
 				margin:10px;
 			}
@@ -367,11 +381,16 @@ article{
 					}
 
 .afficherplus{
-	margin-left:20px;
+	margin-left:30px;
 	margin-top:0px;
-	padding-bottom: 30px;
-
+	padding-bottom: 20px;
 }
+
+#afficheplusp{
+ font-weight: bold;
+ font-size: 1em;
+}
+
 /* Bloc les plus populaire*/
 
 #liseretlespluspopulaires{
@@ -379,9 +398,10 @@ article{
 	width: 30%;
 	min-width: 380px;
 	margin-left:20px;
-	border-radius: 15px 0 0 15px;
+	border-radius:15px;
 	
 }
+
 
 #titre_populaire{
 	display: flex;
@@ -390,10 +410,23 @@ article{
 	
 }
 
+#conteneurblocpopulaire{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 
 aside .graph{
-	padding-top:35px;
-	padding-right:20px;
+	padding-top: 3px;
+	padding-right: 2px
+}
+
+.graphpop{
+	display: flex;
+	align-items: center;
+	margin-top: 18px;
+	margin-right: 35px;
 }
 
 .bloctextpopulaire{
@@ -406,7 +439,7 @@ aside .graph{
 	border-radius:10px;
 	box-shadow: 3px 3px 3px #b6b5b5;
 	height: 150px;
-	width: 330px;
+	width: 310px;
 	margin:15px 30px 30px 30px;
 	display: flex;
 
@@ -447,6 +480,7 @@ aside .graph{
 	position: relative;
 	height: 550px;
 	width: 100%;
+	margin-top: 50px;
 }
 
 #conteneur_bloc_activite_marseille{

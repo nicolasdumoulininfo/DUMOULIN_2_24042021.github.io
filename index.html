@@ -6,8 +6,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-		<link rel="stylesheet" media="screen and (max-width:768px)" href="resolutionTelephone.css"/>
-		<link rel="stylesheet" media="screen and (min-width:769px) and (max-width:1199px)" type="text/css" href="tablette.css"/>
+		<link rel="stylesheet" media="screen and (max-width:767px)" href="resolutionTelephone.css"/>
+		<link rel="stylesheet" media="screen and (min-width:768px) and (max-width:1199px)" type="text/css" href="tablette.css"/>
 		<link rel="stylesheet" media="screen and (min-width:1200px)" type="text/css" href="styles.css"/>
 	
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"/>
@@ -30,15 +30,17 @@
 					<img class="logo" src="images/logo/Reservia@3x.png" alt="logo du site web">
 				</div>
 
+				<div id="borduresup"></div>
+
 				<nav>
 
 					<div class="titremotsmenu">
 						<div class="sousMenu">
-							<div class="motmenu surlignemot"><a href="#conteneur_hebergements">Hébergements</a></div>
-							<div class="motmenu surlignemot"><a href="#section_conteneur_activites">Activités</a></div>
+							<div class="motmenu surlignemot--bleu surlignemottablette"><a class="lignebleuetel" href="#conteneur_hebergements">Hébergements</a></div>
+							<div class="motmenu surlignemot surlignemottablette"><a class="colorblack" href="#section_conteneur_activites">Activités</a></div>
 					</div>
 
-					<div class="motmenu spe-sinscrire"><a href="#">S'inscrire</a></div>
+					<div class="motmenu spe-sinscrire"><a class="gras" href="#">S'inscrire</a></div>
 					</div>
 
 				</nav>
@@ -52,7 +54,7 @@
 
 		<!-- block de recherche-->
 
-		<section>
+		<section id="sectionrecherche">
 
 			<div id="conteneur_recherche">
 				<div id="sousconteneur-recherche">
@@ -91,7 +93,7 @@
 				
 				</div >
 
-				<div id="blocinformation">
+					<div id="blocinformation">
 					<span><i class="fas fa-info cercleinfo" ></i></span>
 
 					<div id="blocinformation_el2"> 
@@ -231,7 +233,7 @@
 						</div>	
 
 						<div class="afficherplus">
-							<h2 >Afficher plus</h2>
+							<p id="afficheplusp">Afficher plus</p>
 						</div>
 
 				</article>
@@ -257,7 +259,7 @@
 							</div>
 
 							<div class="bloctextpopulaire">
-								<p class="descriptionphoto">Hôtel Le soleil du matin</p>
+								<p class="descriptionphoto">Hôtel Le soleil du</br>matin</p>
 								<p>Nuit à partir de <span class="prix">128E</span></p>
 
 								<span>
@@ -300,7 +302,7 @@
 							</div>
 
 							<div class="bloctextpopulaire">
-								<p class="descriptionphoto">Hôtel Tout bleu et Blanc</p>
+								<p class="descriptionphoto">Hôtel Tout bleu et</br>Blanc</p>
 								<p>Nuit à partir de <span class="prix">68E</span></p>
 
 								<span>

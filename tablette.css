@@ -21,7 +21,6 @@ h2{
 }
 
 
-
 article h2{
 	padding-left: 20px;
 	padding-top: 20px;
@@ -50,24 +49,13 @@ head {position: relative;}
 a:hover{
 	background-color:#DEEBFF;
 	font-size: 1.1em;
-	text-decoration: none;
-	border-bottom: solid #0065fc 5px;
-	text-decoration:#0065fc;
-
-	
-}
-
-.surlignemot:hover{
-    border-bottom: #0065fc solid;
-    color:#0065fc;
+	text-decoration: none;	
 }
 
 
 a:visited{
 	text-decoration: none;
-	color: #0065fc;
-	
-	
+	color: #0065fc;	
 }
 
 a:active{
@@ -118,23 +106,24 @@ a:link{
 		padding-top: 20px;
 		padding-bottom: 15px;
 	}
-	.surlignemot:hover{
+	.surlignemottablette:hover{
 		border-bottom: #0065fc solid;
-		color:#0065fc;
         background-color: rgb(171, 214, 200);
 
 	}
+
+
 	.motmenu{
 		padding-left:0;
 		padding-right:0;
 		width: 100%;
 		padding-bottom: 15px;
-        font-size: 1.1em;
+        font-size: 1.2em;
         padding-top:1em;
 		
 		
 	}
-	.surlignemot{
+	.surlignemottablette{
 	border-bottom: solid #f2f2f2;
 	justify-content:space-around;
 	text-align: center;
@@ -163,7 +152,7 @@ section{
 	
 #conteneur_recherche{
 	display: flex;
-	height: 250px;
+	height: 200px;
 	flex-direction: column;
 	
 }
@@ -271,7 +260,7 @@ span .cerclebleu{
 .cerclebleu{
 	background-color:#deebff;
 	border-radius:50%;
-	padding:12px;
+	padding:13px;
 	color:#0065FC;
 }
 
@@ -292,7 +281,7 @@ span .cerclebleu{
 #blocinformation{
 	position: relative;
 	display: flex;
-	top:90px;
+	top:30px;
 	left:0px;
 		
 
@@ -338,6 +327,7 @@ article h2{
 	justify-content: space-around;
 	flex-direction: column-reverse;
 	flex-wrap: wrap;
+	top:100px;
 
 	
 }
@@ -460,6 +450,9 @@ article h2{
 	margin-left:0px;
 	margin-top:0px;
 	padding-bottom: 10px;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-left: 25px;
 
 }
 /* Bloc les plus populaire*/
@@ -469,6 +462,7 @@ article h2{
     display: flex;
     flex-wrap: wrap;
     height: auto;
+	flex-direction: column;
 }
 
 #liseretlespluspopulaires{
@@ -496,7 +490,7 @@ width: 100%;
 .graphpop{
 	display: flex;
 	justify-content: right;
-	width: 100%;
+	padding-right:20px;
 
 }
 aside h2{
@@ -511,7 +505,9 @@ aside .graph{
 }
 
 .bloctextpopulaire{
-	margin-top: 5px;
+	margin-top: 10px;
+	font-size: 1.2em;;
+	font-weight: bold;
 }
 
 .blocphototopopullaire{
@@ -519,8 +515,8 @@ aside .graph{
 	border: white solid 2px;
 	border-radius:10px;
 	box-shadow: 3px 3px 3px #b6b5b5;
-	height: 147px;
-	width: 334px;
+	height: 200px;
+	width: auto;
 	margin:15px 30px 30px 30px;
 	display: flex;
 	
@@ -531,7 +527,7 @@ aside .graph{
 		background-size: cover;
 		background-position: center;
 		height:95%;
-		width:45%;
+		width:80%;
 		margin:5px 5px 5px 5px;
 		border-radius:10px 0 0 10px;
 
@@ -567,7 +563,8 @@ aside .graph{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-
+    position: relative;
+    top: 120px;
 }
 
 section h2{
@@ -678,7 +675,9 @@ display: flex;
 flex-direction: row;
 width: 100%;
 justify-content: space-evenly;
-
+position: relative;
+top: 100px;
+height: 250px;
 	
 
 }
